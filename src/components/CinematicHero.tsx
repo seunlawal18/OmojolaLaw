@@ -111,7 +111,6 @@ const CinematicHero: React.FC = () => {
           <video
             ref={videoRef}
             className="cinematic-video"
-            src={SITE_CONFIG.media.videoPath}
             muted
             playsInline
             preload="auto"
@@ -124,7 +123,10 @@ const CinematicHero: React.FC = () => {
               pointerEvents: 'none', userSelect: 'none',
               zIndex: 0,
             }}
-          />
+          >
+            {/* Explicit type helps browser negotiate byte-range requests correctly */}
+            <source src={SITE_CONFIG.media.videoPath} type="video/mp4" />
+          </video>
         )}
 
         {/* ── Gradient overlay ── */}
