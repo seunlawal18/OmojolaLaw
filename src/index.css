@@ -714,7 +714,7 @@ input, textarea, select, button {
 
 @media (max-width: 768px) {
   .cinematic-track-height {
-    height: 100svh;   /* mobile: static full-screen hero, no scroll track needed */
+    height: 200vh;
   }
 }
 

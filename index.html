@@ -22,6 +22,10 @@
     <meta property="og:url" content="https://omojola.law" />
     <meta property="og:site_name" content="Omojola Law" />
 
+    <!-- Preload the cinematic video so it starts downloading immediately,
+         in parallel with JS/CSS — reduces time-to-first-frame significantly -->
+    <link rel="preload" href="/assets/courthouse-sequence.mp4" as="video" type="video/mp4" />
+
     <!-- Fonts: Cormorant Garamond (display) + Inter (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
